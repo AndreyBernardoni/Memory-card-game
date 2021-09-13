@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Customização do Body*/
+body{
+    background: rgb(22, 1, 43);
+    height: 100vh;
+    display: flex;
+}
+/*Customização da DIV tabuleiro, como um todo*/
+#tabuleiro{
+    width: 700px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(58, 1, 133);
+}
+/*Customização de cada carta, individualmente*/
+.carta{
+    width: calc(25% - 10px);
+    height: 31,5%;
+    margin: 5px;
+    position : relative;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+}
+/*Customização da carta quando clicada para "diminuir"*/
+.carta:active{
+    transform: scale(0.96);
+}
+/*Custumização para girar a carta ao click*/
+.carta.flip{
+    transform: rotateY(180deg);
+}
+/*Customização da frente e verso de cada carta*/
+.frente,
+.verso{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/*Customização para a frente da carta*/
+.frente{
+    transform: rotateY(180deg);
+    padding: 1px;
+    background: rgba(111, 0, 255, 0.459);
+}
+/*Customização para o verso da carta*/
+.verso{
+    padding: 10px;
+    background: rgb(103, 28, 201);
+}
+/*Customização do Botão "Voltar"*/
+button{
+    background-color: #4CAF50;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-align: auto;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 16px;
+    padding-bottom: 32px;
+}
+#b1{
+    background-color: #4CAF50; 
+    color: white; 
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#b1:hover{
+    background-color: rgb(103, 28, 201);
+    color: white;
+    border: 2px solid #4CAF50;
+}
+/*Linha de codigo que permite que o usuario*/
+/*não veja a imagem da carta ao "arrastar" ela*/
+img{
+    user-select: none;
+    pointer-events: none;
+}
+/*Customização da tela final*/
+#menu{
+    left:25%;
+    top:15%;
+    position:absolute;
+    width:50%; /* Valor da Largura */
+    height:70%; /* Valor da Altura */
+    background: rgb(58, 1, 133);
+    color:rgba(111, 0, 255, 0.459);
+    border: solid;
+}
+#description{
+    text-align:center;
+    color: aliceblue;
+}
+.btn{
+    background-color: #4CAF50; 
+    color: white;
+    margin-bottom: 50px;
+}
+.btn:hover{
+    background-color: rgb(103, 28, 201);
+    color: white;
+    border: 2px solid #4CAF50;
+}
+#botoes{
+    position: absolute;
+    left:25%;
+    top: 80%;
+}

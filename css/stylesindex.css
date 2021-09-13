@@ -1,0 +1,61 @@
+/*Customização do Body*/
+body{
+    background-color: rgb(22, 1, 43);
+}
+/*Customização da div Menu*/
+#menu{
+    left:25%;
+    top:15%;
+    position:absolute;
+    width:50%;
+    height:70%;
+    background: rgb(58, 1, 133);
+    color:rgba(111, 0, 255, 0.459);
+    border: solid;
+}
+/*Customização do titulo */
+#titulo{
+    text-align:center;
+    color: aliceblue;
+}
+/*Customização dos botões*/
+#botoes{
+    position: absolute;
+    left:18%;
+    top: 80%;
+}
+/*Customização da descrição*/
+#description{
+    text-align:center;
+    color: aliceblue;
+}
+/*Customização do Gif (img)*/
+img{
+    height:45%;
+    width:45%;
+}
+/*Customização dos botões como um todo*/
+button{
+    background-color: #4CAF50;
+    border-radius: 4px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/*Customização da classe botões*/
+.btn{
+    background-color: #4CAF50; 
+    color: white; 
+}
+/*Customização da classe botões*/
+.btn:hover{
+    background-color: rgb(103, 28, 201);
+    color: white;
+    border: 2px solid #4CAF50;
+}
